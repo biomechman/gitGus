@@ -45,7 +45,7 @@ ver
 % 5. What command would return a list of all of the available functions in 
 % the image processing toolbox? 
 
-
+help images
 
 % 6. On the line below figure, write a command to draw a graph of 
 % x and y. 
@@ -54,22 +54,24 @@ x = linspace(-2*pi,2*pi);
 y = sin(x);
 
 figure
-        %<- command goes here
+plot(x,y)        %<- command goes here
 
-        
+
 
 % 7. Find a function that performs a statistical test you've seen used
 % in a journal article (there are many possible answers to this). 
 
 %
-% Answer: 
+% Answer: corrcoef()
 %
 
 % 8. What are the 2 major types of loops that MATLAB supports? What is the
 % difference between them?
 
 %
-% Answer: 
+% Answer: For and While loops. While loops repeat a statement for an
+% infinite number of times while the "condition" is True. For loops repeat
+% the statement for a pre-set, specific, number of times.
 % 
 
 
@@ -77,7 +79,8 @@ figure
 % an answer. 
 
 %
-% Answer: 
+% Answer: Not-a-Number. It is the result for a mathematically undefined
+% operation, like 0 divided by 0 and/or inf-inf.
 %
 
 
@@ -87,21 +90,42 @@ figure
 % any of the values in A.
 
 A = [1 2 3 2 1 NaN 1 2 3 NaN];
-S = sum(A)
+S = sum(A, 'omitnan')
 
 
 % 11. I used to love playing the game minesweeper. Is there a way that I
 % could play a similar game on Matlab? Write the command that would launch
 % the game if so. 
 
-
+xpbombs 
 
 % 12. What happens if you type why and hit enter in the command window?
 % Repeat this a few times and copy your result below (Make sure everything
 % is commented out).
 
 %
-% Answer: 
+% Answer: why
+% Some mathematician obeyed a kid.
+% why
+% For the love of Pete.
+% why
+% Some terrified hamster wanted it.
+% why
+% Why not?
+% why
+% A engineer insisted on it.
+% why
+% For the approval from the rich hamster.
+% why
+% I obeyed a very smart mathematician.
+% why
+% Mary Ann wanted it that way.
+% why
+% How should I know?
+% why
+% Because they asked the terrified and smart and tall and tall programmer.
+% why
+% To fool a young tall hamster.
 %
 
 
@@ -117,11 +141,16 @@ S = sum(A)
 %%% Enter the code for your program below this line
 
 
+fprintf('Hello World\n')
 
-
+% Prompts user for input and prints what was written, then jumps to next
+% line.
+fprintf(strcat(input('Please type whatever you want: ', 's'),'\n'))
 
 %%%%% When you have completed everything, type the following two commands
 %%%%% (without comments) into your command window. 
+
+
 
 %%% load handel
 %%% sound(y, Fs)
