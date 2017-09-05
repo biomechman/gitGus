@@ -165,7 +165,7 @@ sum(num./den)
 
 % 30.)
 
-v = randi([-10:10],10)
+v = randi([-10,10],10)
 v = v-3
 positive = sum(v > 0)
 vAbs = abs(v)
