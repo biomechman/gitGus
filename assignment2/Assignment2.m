@@ -76,7 +76,7 @@ fprintf('Capitalized letters come first.\n')
 
 logical 1
 logical 1
-2
+logical 1
 logical 0
 
 % 25.)
