@@ -10,4 +10,3 @@ while sleepy
         fprintf('Waking up!\n\n')
     end
 end
-    
