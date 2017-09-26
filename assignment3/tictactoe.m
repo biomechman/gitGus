@@ -90,32 +90,24 @@ end
 winStart(ismember(winStart,humanPlay)) = [];
 
 % Computer plays again (2nd).
-%if gB(5) == 'O'
+
 if gB(1) == 'X'
     compPlay = 9;
-    
 elseif gB(3) == 'X'
     compPlay = 7;
-    
 elseif gB(7) == 'X'
     compPlay = 3;
-    
 else
     compPlay = 1;
-    
 end
+
 if any(ismember(numPlay,compPlay)) == 1
     numPlay(ismember(numPlay,compPlay)) = [];
 else
     compPlay = winStart(randi(length(winStart)));
     numPlay(ismember(numPlay,compPlay)) = [];
 end
-% else
-%     compPlay = winStart(randi(length(winStart)));
-%     fprintf('### Computer plays %i! ###\n\n',compPlay);
-%     pause(1)
-% end
-    
+fprintf('### Computer plays %i! ###\n\n',compPlay);
 % Update board and available numbers 
 numPlay(ismember(numPlay,compPlay)) = [];
 gB(compPlay) = 'X';
@@ -372,8 +364,18 @@ end
 compPlay = numPlay;
 fprintf('### Computer plays %i! ###\n\n',compPlay);
 pause(1)
+gB(compPlay) = 'X';
+fprintf('_%s_|_%s_|_%s_\n',gB(1),gB(2),gB(3))
+fprintf('_%s_|_%s_|_%s_\n',gB(4),gB(5),gB(6))
+fprintf(' %s | %s | %s \n\n',gB(7),gB(8),gB(9))
 
 % Display end-game message:
-fprintf('Game Over\n')
-fprintf('It''s a tie!\n')
-fprintf('Better luck next time!\n')
+if (gB(1) == 'X' && gB(2) == 'X' && gB(3) == 'X') || (gB(4) == 'X' && gB(5) == 'X' && gB(6) == 'X') || (gB(7) == 'X' && gB(8) == 'X' && gB(9) == 'X') || (gB(1) == 'X' && gB(4) == 'X' && gB(7) == 'X') || (gB(2) == 'X' && gB(5) == 'X' && gB(8) == 'X') || (gB(3) == 'X' && gB(6) == 'X' && gB(9) == 'X') || (gB(1) == 'X' && gB(5) == 'X' && gB(9) == 'X') || (gB(3) == 'X' && gB(5) == 'X' && gB(7) == 'X')
+    fprintf('Game Over\n')
+    fprintf('Computer Wins!\n')
+    fprintf('Better luck next time!\n')
+else
+    fprintf('Game Over\n')
+    fprintf('It''s a tie!\n')
+    fprintf('Better luck next time!\n')
+end
