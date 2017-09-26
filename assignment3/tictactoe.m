@@ -146,35 +146,35 @@ if (gB(1) == 'X' && gB(3) == 'X') && gB(2) ~= 'O'
     fprintf('_%s_|_%s_|_%s_\n',gB(1),gB(2),gB(3)) 
     fprintf('_%s_|_%s_|_%s_\n',gB(4),gB(5),gB(6))
     fprintf(' %s | %s | %s \n\n',gB(7),gB(8),gB(9))
-    error('You LOSE!\nGAME OVER\n') 
+    error('You LOSE! GAME OVER')  
 elseif (gB(1) == 'X' && gB(7) == 'X') && gB(4) ~= 'O'
     compPlay = 4; % Computer Wins!
     gB(compPlay) = 'X';
     fprintf('_%s_|_%s_|_%s_\n',gB(1),gB(2),gB(3)) 
     fprintf('_%s_|_%s_|_%s_\n',gB(4),gB(5),gB(6))
     fprintf(' %s | %s | %s \n\n',gB(7),gB(8),gB(9))
-    error('You LOSE!\nGAME OVER\n') 
+    error('You LOSE! GAME OVER')  
 elseif (gB(3) == 'X' && gB(9) == 'X') && gB(6) ~= 'O'
     compPlay = 6; % Computer Wins!
     gB(compPlay) = 'X';
     fprintf('_%s_|_%s_|_%s_\n',gB(1),gB(2),gB(3)) 
     fprintf('_%s_|_%s_|_%s_\n',gB(4),gB(5),gB(6))
     fprintf(' %s | %s | %s \n\n',gB(7),gB(8),gB(9))
-    error('You LOSE!\nGAME OVER\n') 
+    error('You LOSE! GAME OVER')  
 elseif (gB(7) == 'X' && gB(9) == 'X') && gB(8) ~= 'O'
     compPlay = 8; % Computer Wins!
     gB(compPlay) = 'X';
     fprintf('_%s_|_%s_|_%s_\n',gB(1),gB(2),gB(3)) 
     fprintf('_%s_|_%s_|_%s_\n',gB(4),gB(5),gB(6))
     fprintf(' %s | %s | %s \n\n',gB(7),gB(8),gB(9))
-    error('You LOSE!\nGAME OVER\n')    
+    error('You LOSE! GAME OVER')     
 elseif (gB(1) == 'X' && gB(9) == 'X') && gB(5) ~= 'O' || (gB(3) == 'X' && gB(7) == 'X') && gB(5) ~= 'O'
     compPlay = 5; % Computer Wins!
     gB(compPlay) = 'X';
     fprintf('_%s_|_%s_|_%s_\n',gB(1),gB(2),gB(3)) 
     fprintf('_%s_|_%s_|_%s_\n',gB(4),gB(5),gB(6))
     fprintf(' %s | %s | %s \n\n',gB(7),gB(8),gB(9))
-    error('You LOSE!\nGAME OVER\n')
+    error('You LOSE! GAME OVER') 
 else
     if (gB(2) == 'O' && gB(5) == 'O')
         compPlay = 8;
@@ -233,91 +233,91 @@ if (gB(1) == 'X' && gB(3) == 'X') && gB(2) ~= 'O'
     fprintf('_%s_|_%s_|_%s_\n',gB(1),gB(2),gB(3)) 
     fprintf('_%s_|_%s_|_%s_\n',gB(4),gB(5),gB(6))
     fprintf(' %s | %s | %s \n\n',gB(7),gB(8),gB(9))
-    error('You LOSE!\nGAME OVER\n') 
+    error('You LOSE! GAME OVER')  
 elseif (gB(1) == 'X' && gB(2) == 'X') && gB(3) ~= 'O'
     compPlay = 3; % Computer Wins!
     gB(compPlay) = 'X';
     fprintf('_%s_|_%s_|_%s_\n',gB(1),gB(2),gB(3)) 
     fprintf('_%s_|_%s_|_%s_\n',gB(4),gB(5),gB(6))
     fprintf(' %s | %s | %s \n\n',gB(7),gB(8),gB(9))
-    error('You LOSE!\nGAME OVER\n') 
+    error('You LOSE! GAME OVER')  
 elseif (gB(2) == 'X' && gB(3) == 'X') && gB(1) ~= 'O'
     compPlay = 1; % Computer Wins!
     gB(compPlay) = 'X';
     fprintf('_%s_|_%s_|_%s_\n',gB(1),gB(2),gB(3)) 
     fprintf('_%s_|_%s_|_%s_\n',gB(4),gB(5),gB(6))
     fprintf(' %s | %s | %s \n\n',gB(7),gB(8),gB(9))
-    error('You LOSE!\nGAME OVER\n') 
+    error('You LOSE! GAME OVER')  
 elseif (gB(1) == 'X' && gB(7) == 'X') && gB(4) ~= 'O'
     compPlay = 4; % Computer Wins!
     gB(compPlay) = 'X';
     fprintf('_%s_|_%s_|_%s_\n',gB(1),gB(2),gB(3)) 
     fprintf('_%s_|_%s_|_%s_\n',gB(4),gB(5),gB(6))
     fprintf(' %s | %s | %s \n\n',gB(7),gB(8),gB(9))
-    error('You LOSE!\nGAME OVER\n') 
+    error('You LOSE! GAME OVER')  
 elseif (gB(1) == 'X' && gB(4) == 'X') && gB(7) ~= 'O'
     compPlay = 7; % Computer Wins!
     gB(compPlay) = 'X';
     fprintf('_%s_|_%s_|_%s_\n',gB(1),gB(2),gB(3)) 
     fprintf('_%s_|_%s_|_%s_\n',gB(4),gB(5),gB(6))
     fprintf(' %s | %s | %s \n\n',gB(7),gB(8),gB(9))
-    error('You LOSE!\nGAME OVER\n') 
+    error('You LOSE! GAME OVER')  
 elseif (gB(4) == 'X' && gB(7) == 'X') && gB(1) ~= 'O'
     compPlay = 1; % Computer Wins!
     gB(compPlay) = 'X';
     fprintf('_%s_|_%s_|_%s_\n',gB(1),gB(2),gB(3)) 
     fprintf('_%s_|_%s_|_%s_\n',gB(4),gB(5),gB(6))
     fprintf(' %s | %s | %s \n\n',gB(7),gB(8),gB(9))
-    error('You LOSE!\nGAME OVER\n')
+    error('You LOSE! GAME OVER') 
 elseif (gB(3) == 'X' && gB(9) == 'X') && gB(6) ~= 'O'
     compPlay = 6; % Computer Wins!
     gB(compPlay) = 'X';
     fprintf('_%s_|_%s_|_%s_\n',gB(1),gB(2),gB(3)) 
     fprintf('_%s_|_%s_|_%s_\n',gB(4),gB(5),gB(6))
     fprintf(' %s | %s | %s \n\n',gB(7),gB(8),gB(9))
-    error('You LOSE!\nGAME OVER\n')
+    error('You LOSE! GAME OVER') 
 elseif (gB(3) == 'X' && gB(6) == 'X') && gB(9) ~= 'O'
     compPlay = 9; % Computer Wins!
     gB(compPlay) = 'X';
     fprintf('_%s_|_%s_|_%s_\n',gB(1),gB(2),gB(3)) 
     fprintf('_%s_|_%s_|_%s_\n',gB(4),gB(5),gB(6))
     fprintf(' %s | %s | %s \n\n',gB(7),gB(8),gB(9))
-    error('You LOSE!\nGAME OVER\n') 
+    error('You LOSE! GAME OVER')  
 elseif (gB(6) == 'X' && gB(9) == 'X') && gB(4) ~= 'O'
     compPlay = 3; % Computer Wins!
     gB(compPlay) = 'X';
     fprintf('_%s_|_%s_|_%s_\n',gB(1),gB(2),gB(3)) 
     fprintf('_%s_|_%s_|_%s_\n',gB(4),gB(5),gB(6))
     fprintf(' %s | %s | %s \n\n',gB(7),gB(8),gB(9))
-    error('You LOSE!\nGAME OVER\n') 
+    error('You LOSE! GAME OVER')  
 elseif (gB(7) == 'X' && gB(9) == 'X') && gB(8) ~= 'O'
     compPlay = 8; % Computer Wins!
     gB(compPlay) = 'X';
     fprintf('_%s_|_%s_|_%s_\n',gB(1),gB(2),gB(3)) 
     fprintf('_%s_|_%s_|_%s_\n',gB(4),gB(5),gB(6))
     fprintf(' %s | %s | %s \n\n',gB(7),gB(8),gB(9))
-    error('You LOSE!\nGAME OVER\n')
+    error('You LOSE! GAME OVER') 
 elseif (gB(7) == 'X' && gB(8) == 'X') && gB(9) ~= 'O'
     compPlay = 9; % Computer Wins!
     gB(compPlay) = 'X';
     fprintf('_%s_|_%s_|_%s_\n',gB(1),gB(2),gB(3)) 
     fprintf('_%s_|_%s_|_%s_\n',gB(4),gB(5),gB(6))
     fprintf(' %s | %s | %s \n\n',gB(7),gB(8),gB(9))
-    error('You LOSE!\nGAME OVER\n') 
+    error('You LOSE! GAME OVER')  
 elseif (gB(8) == 'X' && gB(9) == 'X') && gB(7) ~= 'O'
     compPlay = 7; % Computer Wins!
     gB(compPlay) = 'X';
     fprintf('_%s_|_%s_|_%s_\n',gB(1),gB(2),gB(3)) 
     fprintf('_%s_|_%s_|_%s_\n',gB(4),gB(5),gB(6))
     fprintf(' %s | %s | %s \n\n',gB(7),gB(8),gB(9))
-    error('You LOSE!\nGAME OVER\n')    
+    error('You LOSE! GAME OVER')     
 elseif (gB(1) == 'X' && gB(9) == 'X') && gB(5) ~= 'O' || (gB(3) == 'X' && gB(7) == 'X') && gB(5) ~= 'O'
     compPlay = 5; % Computer Wins!
     gB(compPlay) = 'X';
     fprintf('_%s_|_%s_|_%s_\n',gB(1),gB(2),gB(3)) 
     fprintf('_%s_|_%s_|_%s_\n',gB(4),gB(5),gB(6))
     fprintf(' %s | %s | %s \n\n',gB(7),gB(8),gB(9))
-    error('You LOSE!\nGAME OVER\n') 
+    error('You LOSE! GAME OVER')  
 else
     if (gB(2) == 'O' && gB(5) == 'O') && gB(7) ~= 'X'
         compPlay = 8;
