@@ -1,7 +1,8 @@
 function [m3DaysMean, f3DaysMean, mMeanMean, fMeanMean] = genderIsoCalc(GENDER,DAY1,DAY2,DAY3)
 % Calculate Mean Isometric Strength for Each Gender Accross all 3 Days & Mean of Those Means
 %
-% Output = Input: [m3DaysMean, f3DaysMean, mMeanMean, fMeanMean] = genderIsoCalc(GENDER,DAY1,DAY2,DAY3)
+% Output = Input: [male3DaysMean, female3DaysMean, maleMeanOfMeans, femaleMeanOfMeans] = 
+%                                                      genderIsoCalc(GENDER,DAY1,DAY2,DAY3)
 %
 %  Gustavo Sandri Heidner (October 20th, 2017).
     for i = 1:length(GENDER)
@@ -21,8 +22,8 @@ function [m3DaysMean, f3DaysMean, mMeanMean, fMeanMean] = genderIsoCalc(GENDER,D
             females = [females; DAY1(i), DAY2(i), DAY3(i)];
         end
     end
-    m3DaysMean = [mean(males(:,1:3))];
-    f3DaysMean = [mean(females(:,1:3))];
+    m3DaysMean = [mean(males(:,1:3))]';
+    f3DaysMean = [mean(females(:,1:3))]';
     mMeanMean = mean(m3DaysMean);
     fMeanMean = mean(f3DaysMean);
     
