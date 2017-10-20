@@ -1,6 +1,6 @@
 %% Tic-Tac-Toe
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Assignment 3: Matlab Tic-Tac-Toe withouth Loops (!@#!@%$!@#!@%!@#!@)
+% Assignment 3: Matlab Tic-Tac-Toe with Loops (Groovy!)
 %
 % Submitted by: Gustavo Sandri Heidner
 %
@@ -33,8 +33,6 @@
 % This script lets you play Tic-Tac-Toe of DOOM against the computer. 
 % You shall not win!
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 
 % Reset and Initialize available number of plays.
 clear numPlay
