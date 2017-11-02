@@ -108,7 +108,11 @@ while userGuess ~= secretNumber
     
     fprintf('\nEnter a guess (1-%d). Decimals will be rounded down: ', highest);
     userGuess = floor(str2double(input('','s')));
-    while isnan(userGuess) || userGuess < 1 || userGuess >= highest
+%% B.08: Wrong comparison in WHILE loop: (userGuess >= highest)
+%        Found by visual inspection. Will include a correct guess that is
+%        equal to the highest number. Changed the statement: userGuess > highest
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    while isnan(userGuess) || userGuess < 1 || 
         fprintf('Sorry, that is not a valid guess.\nRe-enter a guess (1-%d): ', highest);
         userGuess = floor(str2double(input('','s')));
     end % of guess validation loop
