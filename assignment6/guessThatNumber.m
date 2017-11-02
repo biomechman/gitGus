@@ -79,7 +79,11 @@ end
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% B.05: Formula will generate results of 0 and 100 if using 'floor'/'ceil'
 %        Found by simulating results. Better to use 'randi' with defined
-%        numerical space.
+%        numerical space. The 'rand' function wrongly states that it will
+%        generate numbers in the open interval of (0,1) but in practice
+%        this is not the case, as a value of 0 may be returned after the
+%        UINT32 RNG # is converted to DOUBLE. The chance is roughly 2^-53,
+%        but it's still there. \_(+.+)_/
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 secretNumber = randi([1,highest]);
