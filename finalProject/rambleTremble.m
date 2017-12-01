@@ -15,17 +15,7 @@ function rambleTremble(Fx, sampRate, freq)
 %   differential of those two points to find a point in the middle where
 %   horizontal force is zero (Fx = 0).
 
-% Resample the data:
-reFx = Fx(1:sampRate/freq:length(Fx));
-reFy = Fy(1:sampRate/freq:length(Fy));
-plot(reFx,reFy);
-fprintf('Press any key to continue... \n\n')
-pause()
 
-% Create the dipoles
-for i = 1:length(reFx)-1
-    vX(i) = reFx(i+1) - reFx(i);
-end
 
 % Find the timepoint proportion within where Fx = 0.
 for  i = 1:length(vX)
@@ -41,6 +31,11 @@ for  i = 1:length(vX)
             t = t + rate;
         end
         timePoint = ((i*50)-49) + timeDiff;
+   %other cases go here...
+    
+    end
+end
+        %% Find X and Y at timePoint
         
 %         FxZero = vX(i) + (freq/2)*rate;
 %     elseif vX(i+1) < 0
