@@ -1,4 +1,4 @@
-function [vX, Fx, Fy] = simData(sampRate, noiseMag, freq)
+function [vX, Fx, Fy] = simData(sampRate, noiseMag, resFreq)
 %% Test Data Generator
 %   Generates a known variable data path composed of a smooth trajectory
 %   and noise data.
@@ -33,9 +33,9 @@ fprintf('Press any key to continue... \n\n')
 % Wait for key press to continue.
 pause()
 
-% Resample the data:
-reFx = Fx(1:sampRate/freq:length(Fx));
-reFy = Fy(1:sampRate/freq:length(Fy));
+% Resample the data and display it:
+reFx = Fx(1:sampRate/resFreq:length(Fx));
+reFy = Fy(1:sampRate/resFreq:length(Fy));
 plot(reFx,reFy);
 fprintf('Press any key to continue... \n\n')
 pause()
@@ -44,6 +44,13 @@ pause()
 for i = 1:length(reFx)-1
     vX(i) = reFx(i+1) - reFx(i);
 end
+
+% Create a random COP position data and display it:
+COPx = 10*rand(1)*cos(t);
+COPy = 10*rand(1)*sin(t);
+plot(COPx,COPy)
+fprintf('Press any key to continue... \n\n')
+pause()
 
 
 end
