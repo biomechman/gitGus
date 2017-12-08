@@ -102,7 +102,6 @@ Data.VarName6 = cell2mat(raw(:, 6));
 Data.VarName7 = cell2mat(raw(:, 7));
 Data.VarName8 = cell2mat(raw(:, 8));
 Data.VarName9 = cell2mat(raw(:, 9));
-fprintf('Done!\n')
 
 totalTime = Data.VarName2(1);
 sampRate = Data.VarName2(2);
@@ -110,6 +109,10 @@ Fx = Data.VarName1(27:end);
 Fy = Data.VarName2(27:end);
 COPx = Data.VarName7(27:end);
 COPy = Data.VarName8(27:end);
+
+%% Saves a copy of the raw data in a .mat file
+vars.COPx = COPx; vars.COPy = COPy; vars.Fx = Fx; vars.Fy = Fy; vars.sampRate = sampRate;
+save('vars');
 
 %% Force Plate Position Data (This will be implemented later...)
 % Upper right corner
