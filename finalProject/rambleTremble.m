@@ -63,5 +63,5 @@ subplot(3,1,3), text(330, 90, ['\it r = ', num2str(r(1,2),'%.2f')])
 %   First column is filtered horizontal force data, second column is
 %   filtered CoP horizontal displacement data, third column is cubic
 %   spline interpolation of CoP displacement.
-xlswrite('Ramble_Tremble',[Fx, COPx, yInterp])
+xlswrite('Ramble_Tremble',[Fx, COPx, yInterp'])
 saveas(gcf,'Rambling and Trembling Graphs')
